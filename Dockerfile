@@ -1,10 +1,10 @@
 FROM node:22-bookworm-slim
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --omit=dev
+RUN npm ci
 COPY prisma ./prisma
 COPY prisma7.config.ts ./
-RUN npm install --no-save prisma@7.10.1 tsx@4.20.6 && npx prisma generate --config prisma7.config.ts
+RUN npm run db:generate
 COPY server.js normalized-store.js ./
 COPY scripts/seed-if-empty.cjs ./scripts/seed-if-empty.cjs
 COPY prisma/seed.ts ./prisma/seed.ts
