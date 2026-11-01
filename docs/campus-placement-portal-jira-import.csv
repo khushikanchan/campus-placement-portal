@@ -1,0 +1,24 @@
+Issue Type,Summary,Description,Priority,Story Points,Epic Name
+Epic,Authentication and User Management,Authentication and recruiter account controls,,,,Authentication and User Management
+Epic,Student Profile and Resume Management,Student profile and private résumé handling,,,,Student Profile and Resume Management
+Epic,Job Posting and Discovery,Recruiter job publishing and student job search,,,,Job Posting and Discovery
+Epic,Job Application and Tracking,Application submission and candidate review,,,,Job Application and Tracking
+Epic,Interview Scheduling,Recruiter interview scheduling and updates,,,,Interview Scheduling
+Epic,TPO Dashboard and Placement Analytics,Campus status monitoring and placement reporting,,,,TPO Dashboard and Placement Analytics
+Epic,Notifications and Announcements,Student notifications and TPO announcements,,,,Notifications and Announcements
+Epic,Testing Security and Deployment,Quality assurance and delivery preparation,,,,Testing Security and Deployment
+Story,"As a student, I want to register and log in so that I can access the portal.","Acceptance criteria: unique email creates an account; invalid values are rejected; login establishes a session; public registration cannot grant TPO.",Highest,5,Authentication and User Management
+Story,"As a student, I want to create and update my profile so recruiters can view my qualifications.","Acceptance criteria: student can update academic details and skills; server validates fields; other students cannot modify this profile.",High,5,Student Profile and Resume Management
+Story,"As a student, I want to upload my résumé so recruiters can review it.","Acceptance criteria: accept PDF DOC or DOCX within size limit; reject invalid type; owner downloads or removes; access checks are enforced.",Highest,5,Student Profile and Resume Management
+Story,"As a recruiter, I want to create and publish job posts so eligible students can apply.","Acceptance criteria: required fields validate; recruiter sees only own roles; published roles appear in student discovery.",Highest,8,Job Posting and Discovery
+Story,"As a student, I want to browse and filter jobs so I can find suitable opportunities.","Acceptance criteria: search title company and skills; filters apply; reset and no-results states work.",High,5,Job Posting and Discovery
+Story,"As a student, I want to apply for jobs so recruiters can consider me.","Acceptance criteria: eligible signed-in student submits once; duplicate is rejected; confirmation and application date are visible.",Highest,8,Job Application and Tracking
+Story,"As a student, I want to track application status so I know my progress.","Acceptance criteria: only own applications are visible; status history is chronological; current status is prominent.",Highest,5,Job Application and Tracking
+Story,"As a recruiter, I want to review applicants and shortlist candidates.","Acceptance criteria: recruiter sees applicants to own roles; can filter and update status; student receives an update.",High,8,Job Application and Tracking
+Story,"As a recruiter, I want to schedule interviews for shortlisted candidates.","Acceptance criteria: only own shortlisted applicants can be scheduled; date mode and location or link validate; student is notified.",High,8,Interview Scheduling
+Story,"As a student, I want interview notifications so I do not miss conversations.","Acceptance criteria: schedule reschedule and cancellation appear in unread list with time and application context.",High,5,Notifications and Announcements
+Story,"As a TPO, I want to view student placement status so I can monitor campus progress.","Acceptance criteria: TPO sees student status; department and year filters apply; unauthorized users are denied.",Highest,8,TPO Dashboard and Placement Analytics
+Story,"As a TPO, I want to generate placement reports so I can analyze outcomes.","Acceptance criteria: totals match filtered records; CSV has headings; empty report is handled.",High,8,TPO Dashboard and Placement Analytics
+Story,"As a TPO, I want to manage recruiter accounts so only trusted recruiters post jobs.","Acceptance criteria: TPO sees verification state; approval actions are audited; recruiter cannot change verification.",Medium,5,Authentication and User Management
+Story,"As a student, I want application update notifications so I can respond promptly.","Acceptance criteria: status transition creates unread notification; timestamp and context appear; mark-all-read works.",Medium,3,Notifications and Announcements
+Story,"As a TPO, I want to publish placement announcements for students.","Acceptance criteria: TPO publishes validated notice; target audience receives it; author and date are recorded.",Medium,5,Notifications and Announcements
